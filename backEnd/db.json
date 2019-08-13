@@ -1,0 +1,43 @@
+{
+    "user" :[{
+        "id": 1,
+        "name": "Bruno Holsback Melo",
+        "email": "holsback@gmail.com"
+    }, {
+        "id": 2,
+        "name": "Augusto Pedrosa da Silva",
+        "email": "augusto@gmail.com"
+    }, {
+        "id": 3,
+        "name": "Barbara Julia da Silva",
+        "email": "bbjulia@gmail.com"
+    }, {
+        "id": 4,
+        "name": "Vilda Pedra Augusta",
+        "email": "Vida@gmail.com"
+    }, {
+        "id": 5,
+        "name": "Cida Joaquina da Silva",
+        "email": "cidinha@gmail.com"
+    }, {
+        "id": 6,
+        "name": "Joaquim Augusto Lorenzo",
+        "email": "joaquim@gmail.com"
+    }, {
+        "id": 7,
+        "name": "Edim Vila Verde Figueiredo",
+        "email": "edimvvf@gmail.com"
+    }, {
+        "id": 8,
+        "name": "Polar Henrique",
+        "email": "polar.h@gmail.com"
+    }, {
+        "id": 9,
+        "name": "Primim Araujo",
+        "email": "primima@gmail.com"
+    }, {
+        "id": 10,
+        "name": "Peteca de Oliveira",
+        "email": "petecaO@gmail.com"
+    }]
+}
