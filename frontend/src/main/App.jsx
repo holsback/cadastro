@@ -13,7 +13,10 @@ export default props =>
     <div className="app">
         <Logo />
         <Nav />
-        <Main icon="graduation-cap" title="Sesi Senai"
+        <Main icon="graduation-cap text-danger" title="Sesi Senai"
             subtitle="Tela de cadastro"/>
+            <div className = 'display-4'>Teste</div>
+                <hr />
+                <p className="mb-0">Cadastro</p>
         <Footer />
     </div>
