@@ -7,7 +7,9 @@ Os fragmentos permitem agrupar uma lista de filhos sem adicionar nos extras ao D
 Para usarmos o Header*/
     <React.Fragment>
         <Header {...props}/>
-        <main className = "content">
-            Conteúdo
+        <main className = "content container-fluid">
+            <div className = "p-33 mt-3">
+                {props.children}
+            </div>
         </main>
     </React.Fragment>
