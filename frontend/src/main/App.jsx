@@ -13,6 +13,7 @@ export default props =>
     <div className="app">
         <Logo />
         <Nav />
-        <Main />
+        <Main icon="graduation-gap" title="Sesi Senai"
+            subtitle="Tela de cadastro"/>
         <Footer />
     </div>
