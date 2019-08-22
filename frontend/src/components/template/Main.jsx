@@ -6,7 +6,7 @@ export default props =>/*Componente pode retornar multiplos elementos.
 Os fragmentos permitem agrupar uma lista de filhos sem adicionar nos extras ao DOM
 Para usarmos o Header*/
     <React.Fragment>
-        <Header />
+        <Header {...props}/>
         <main className = "content">
             Conteúdo
         </main>
