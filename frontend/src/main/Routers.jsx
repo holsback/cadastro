@@ -8,5 +8,5 @@ export default props =>
     <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/User' component={UserCrud}/>
-        <Route from ='*' to='/' />
+        <Redirect from ='*' to='/' />
     </Switch>

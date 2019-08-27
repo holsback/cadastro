@@ -10,7 +10,7 @@ const heardProps = {
 
 export default class UserCrud extends Component {
     render(){
-        retur(
+        return(
             <Main {...heardProps}>
                 Teste de cadastro
             </Main>
