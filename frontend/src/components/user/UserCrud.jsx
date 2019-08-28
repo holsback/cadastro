@@ -17,11 +17,23 @@ const inicialState = {
 }
 
 export default class UserCrud extends Component {
-    render(){
-        return(
-            <Main {...heardProps}>
-                Teste de cadastro
-            </Main>
-        )
+    state = { ...inicialState}
+
+    clear(){
+        this.setState({ user: inicialState.user})
+    }
+//Para incluir e alterar
+    save(){
+        const user = this.state.user
+        const method = user.id ? 'put' : 'post'
+        /*Se id for verdadeiro (existe um id, faça um imput),
+        senao um post*/
+        const url = user.id ? `${baseUrl}/${user.id}` : baseUrl
+    //Se existe um id atualiza a informação senao baseUrl cria mais um id
+        axios[method] (url, user)
+        .then(resp => {
+            const list = this.getUpdateList(resp.data)
+            this.setState({ user: inicialState.user, list})
+        })
     }
 }
