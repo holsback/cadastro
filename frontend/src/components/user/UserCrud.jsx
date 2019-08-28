@@ -36,4 +36,14 @@ export default class UserCrud extends Component {
             this.setState({ user: inicialState.user, list})
         })
     }
+getUpdateList(user){
+        const list = this.state.list.filter(u => u.id !== user.id)
+        list.unshift(user)
+        return list
+    }
+updateField(event){
+        const user = { ...this.state.user }
+        user[event.target.name] = event.target.value
+        this.setState({ user })
+    }  
 }
