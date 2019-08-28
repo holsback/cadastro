@@ -44,6 +44,33 @@ getUpdateList(user){
 updateField(event){
         const user = { ...this.state.user }
         user[event.target.name] = event.target.value
-        this.setState({ user })
+        this.setState({ user 
+        })
     }  
 }
+
+    renderForm(){
+        return(
+            <div className="form">
+                <div className="col-12 col-md-6">
+                    <label>Nome</label>
+                    <input type="text" className="form-control"
+                    name="name"
+                    value={this.state.user.name}
+                    onChange={e => this.updateField(e)}
+                    placeholder="Nome = "></input>
+                </div>
+            </div>
+            <div className="col-12 col-md-6">
+                <div className="Form-group">
+                    <label>Email</label>
+                    <input type="text" className="form-control"
+                    name="email"
+                    value={this.state.user.email}
+                    onChange={e => this.updateField(e)}
+                    placeholder="Email = "></input>
+                </div>
+            </div>
+
+        )
+    }
