@@ -86,4 +86,14 @@ renderForm() {
             </div>
         )
     }
+
+    render(){
+        return(
+            <Main {...heardProps}>
+                {this.renderForm()}
+            </Main>
+        )
+    }
 }
+
+    
