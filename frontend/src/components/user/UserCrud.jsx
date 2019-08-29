@@ -44,15 +44,14 @@ getUpdateList(user){
 updateField(event){
         const user = { ...this.state.user }
         user[event.target.name] = event.target.value
-        this.setState({ user 
-        })
-    }  
-}
+        this.setState({ user })
+}  
 
-    renderForm(){
+renderForm() {
         return(
             <div className="form">
                 <div className="col-12 col-md-6">
+                    <div className="form-group">
                     <label>Nome</label>
                     <input type="text" className="form-control"
                     name="name"
@@ -71,6 +70,20 @@ updateField(event){
                     placeholder="Email = "></input>
                 </div>
             </div>
-
+            <hr />
+                <div className="row">
+                    <div className="col-12 d-flex justify-content-end">
+                        <button className="btn btn-primary"
+                            onClick={e => this.save(e)}>
+                            salvar
+                        </button>
+                        <button className="btn btn-secundary ml-2"
+                            onClick={e => this.clear(e)}>
+                            cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
         )
     }
+}
