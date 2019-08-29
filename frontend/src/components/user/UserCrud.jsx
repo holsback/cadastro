@@ -12,7 +12,7 @@ const heardProps = {
 const baseUrl = "http://localhost:3001/user";
 //Estado inicial - Quando sobe a aplicação
 const inicialState = {
-  user: { name: "", email: "" },
+  user: { name: "", email: "", Endereço: "" },
   list: []
 };
 
@@ -94,6 +94,21 @@ export default class UserCrud extends Component {
             />
           </div>
         </div>
+
+        <div className="col-12 col-md-6">
+          <div className="form-group">
+            <label>Endereço</label>
+            <input
+              type="text"
+              className="form-control"
+              name="Endereço"
+              value={this.state.user.endereco}
+              onChange={e => this.updateField(e)}
+              placeholder="Digite seu Endereço"
+            />
+          </div>
+        </div>
+
         <hr />
         <div className="row">
           <div className="col-12 d-flex justify-content-end">
@@ -132,6 +147,7 @@ export default class UserCrud extends Component {
           <th>ID</th>
           <th>Nome</th>
           <th>E-mail</th>
+          <th>Endereço</th>
           <th>Ações</th>
         </thead>
         <tbody>{this.renderRows()}</tbody>
@@ -145,6 +161,7 @@ export default class UserCrud extends Component {
           <td>{user.id}</td>
           <td>{user.name}</td>
           <td>{user.email}</td>
+          <td>{user.Endereço}</td>
           <td>
             <button className="btn btn=warning">
               <i className="fa fa-pencil" onClick={() => this.load(user)} />
