@@ -13,5 +13,24 @@
       "id": 2
     }
   ],
-  "produtos": []
+  "produtos": [
+    {
+      "Produto": "Arroz",
+      "quantidade": "43",
+      "valor": "R$8.00",
+      "id": 1
+    },
+    {
+      "Produto": "Feijão",
+      "quantidade": "83",
+      "valor": "R$3.00",
+      "id": 2
+    },
+    {
+      "Produto": "Macarrão",
+      "quantidade": "13",
+      "valor": "R$5.00",
+      "id": 3
+    }
+  ]
 }
