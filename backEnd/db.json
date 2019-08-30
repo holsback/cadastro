@@ -12,6 +12,14 @@
       "Endereço": "Rua Joaquim 25",
       "id": 2
     }
+  ],
+  "produtos": [
+    {
+      "NomeProduto": "Arroz",
+      "Quantidade": "30",
+      "Valor": "9.5",
+      "id": 1
+    }
   ]
 }
   
