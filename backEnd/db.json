@@ -13,12 +13,5 @@
       "id": 2
     }
   ],
-  "produtos": [
-    {
-      "NomeProduto": "Arroz",
-      "Quantidade": "95",
-      "Valor": 9.5,
-      "id": 1
-    }
-  ]
+  "produtos": []
 }
