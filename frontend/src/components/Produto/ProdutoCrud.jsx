@@ -33,12 +33,12 @@ export default class ProdutoCrud extends Component {
   //Para incluir e alterar
   save() {
     const produtos = this.state.produtos;
-    const method = produtos.id ? "put" : "post";
+    const metodo = produtos.id ? "put" : "post";
     /*Se id for verdadeiro (existe um id, faça um put),
         senao um post */
     const url = produtos.id ? `${baseUrl}/${produtos.id}` : baseUrl;
     //Se existe um id atualiza a informação senão baseUrl cria mais um id
-    axios[method](url, produtos).then(resp => {
+    axios[metodo](url, produtos).then(resp => {
       //getUpdateLIst será criada
       const list = this.getUpdateList(resp.data);
       this.setState({ produtos: inicialState.produtos, list });
@@ -67,7 +67,7 @@ export default class ProdutoCrud extends Component {
   //Jsx para renderizar o formulário.
   renderForm() {
     return (
-      <div className="produtos">
+      <div className="form">
         <div className="col-12 col-md-6">
           <div className="form-group">
             <label>Nome Produto</label>
