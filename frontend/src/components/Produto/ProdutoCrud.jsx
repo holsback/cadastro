@@ -74,7 +74,7 @@ export default class ProdutoCrud extends Component {
             <input
               type="text"
               className="form-control"
-              name="Nome Produto"
+              name="produtos"
               value={this.state.produtos.NomeProduto}
               onChange={e => this.updateField(e)}
               placeholder="Digite o nome do produto"
@@ -87,7 +87,7 @@ export default class ProdutoCrud extends Component {
             <input
               type="text"
               className="form-control"
-              name="Quantidade"
+              name="produtos"
               value={this.state.produtos.Quantidade}
               onChange={e => this.updateField(e)}
               placeholder="Digite a quantidade"
@@ -101,7 +101,7 @@ export default class ProdutoCrud extends Component {
             <input
               type="text"
               className="form-control"
-              name="Valor"
+              name="produtos"
               value={this.state.produtos.Valor}
               onChange={e => this.updateField(e)}
               placeholder="Digite o valor"
