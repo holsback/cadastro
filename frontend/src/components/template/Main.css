@@ -2,3 +2,11 @@ main > div{
     background-color: #fff;
     box-shadow: 0px 0px 15px #0004;
 }
+
+Home{
+    background-color: #fff;/*Cor de fundo*/
+    padding: 0px 15px; /*Separar o icone do escrito*/
+    overflow: hidden;/*Não estourar espaços*/
+    white-space: nowrap;/*Não estourar espaços textos*/
+    box-shadow: var(--shadow);/*Sombreamento*/
+}
